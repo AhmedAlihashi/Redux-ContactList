@@ -20,11 +20,13 @@ class App extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log(this.state.name);
+    let contact = {
+      name: this.state.name
+    };
+    this.props.createContact(contact);
   }
 
   render() {
-    let name;
     return (
       <div>
         <h1>Clientside Contacts Application</h1>
@@ -44,4 +46,19 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = (state, ownProps) => {
+  return {
+    contacts: state.contacts
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    createContact: contact => dispatch(contactAction.createContact(contact))
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapStateToProps
+)(App);
