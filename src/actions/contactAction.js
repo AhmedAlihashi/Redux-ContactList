@@ -1,15 +1,15 @@
-import * as Types from "./Types";
+import * as actionTypes from "./actionTypes";
 //es6 imp
 export const createContact = contact => {
   return {
-    type: Types.CREATE_NEW_CONTACT,
+    type: actionTypes.CREATE_NEW_CONTACT,
     contact: contact
   };
 };
 
 export const deleteContact = id => {
   return {
-    type: Types.REMOVE_CONTACT,
+    type: actionTypes.REMOVE_CONTACT,
     id: id
   };
 };
