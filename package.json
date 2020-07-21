@@ -1,6 +1,6 @@
 {
-  "name": "todoapp",
-  "version": "0.1.0",
+  "name": "contact-keeper",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://ahmedalihashi.github.io/Redux-ContactList/",
   "dependencies": {
