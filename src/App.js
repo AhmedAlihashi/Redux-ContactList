@@ -34,9 +34,10 @@ const App = (props) => {
     </div>
   );
 
-  const deleteContact = (e, index) => (
-    e.preventDefault(), props.deleteContact(index)
-  );
+  const deleteContact = (e, index) => {
+    e.preventDefault();
+    props.deleteContact(index);
+  };
 
   return (
     <div className="container">
