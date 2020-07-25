@@ -40,10 +40,10 @@ const App = (props) => {
 
   return (
     <div className="container">
-      <h1>Simple Redux Contact Keeper</h1>
+      <h1>Simple Redux Contact List</h1>
       <hr />
       <div>
-        <h3>Add Contact Form</h3>
+        <h3>Add Contact here</h3>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
