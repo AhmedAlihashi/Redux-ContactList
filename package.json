@@ -2,7 +2,7 @@
   "name": "contact-keeper",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://ahmedalihashi.github.io/Redux-ContactList/",
+  "homepage": "https://ahmedalihashi.github.io/contact-list/",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.10.1",
